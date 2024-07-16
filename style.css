@@ -92,23 +92,23 @@ main{
     justify-content: center;
 }
 #img-grande{
-   height: 570px;
+   height: 80%;
    width: 75%;
-   margin-top: -260px;
+   margin-top: -300px;
    position: absolute;
 }
 #cards-container{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    width: 75%;
+    width: 80%;
     margin: auto;
 }
 .cards-img{
     width: 52%;
     padding: 30px;
     padding-bottom: 0px;
-    height: 420px;
+    height: 80%;
 }
 #p-main-meio{
     color: white;
@@ -122,7 +122,7 @@ main{
 }
 #main-final-container{
     display: flex;
-    width: 72%;
+    width: 75%;
     margin: auto;
     justify-content: space-between;
     margin-top: 70px;
@@ -169,7 +169,7 @@ main{
 article{
     display: flex;
     justify-content: space-evenly;
-    width: 85%;
+    width: 80%;
     margin: auto;
     margin-top: 120px;
     color: #2b2730;
@@ -188,12 +188,13 @@ article{
     line-height: 3.8rem;
 }
 #article-left{
-    margin-left: 80px;
+    width: 40%;
     margin-top: 5px;
 }
 #p-baixo-art{
     margin: 20px 0px;
     width: 68%;
+    font-size: 13px;
     font-weight: 400;
 }
 #article-right{
@@ -202,8 +203,9 @@ article{
     gap: 80px;
     margin-top: 15px;
     width: 60%;
-    text-align: start;
-    justify-content: center;
+    text-align: center;
+    align-items: center;
+    justify-content: end;
 }
 #art-icon-container > img{
     height: 80%;
@@ -253,40 +255,133 @@ aside > button{
     cursor: pointer;
 }
 footer{
-    padding: 60px;
-    margin-top: 110px;
+    background-color: #2b2730;
+    margin-top: 120px;
     display: flex;
-    justify-content: space-between;
-    width: 86%;
-    margin: auto;
-    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
 }
-#link-redes-sociais{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
-#logo-foot{
-    margin-top: 10px;
-}
-#logo-rs > a{
-   margin-right: 5px;
-}
-#logo-rs{
-    margin-bottom: 30px;
-}
-#topicos-container{
-    display: flex;
-    justify-content: space-evenly;
-}
-.topicos{
-    padding: 0px 40px 20px 40px;
-}
-.topicos > h3{
-    padding-bottom: 10px;
+footer > p{
     font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    padding: 20px;
+    width: 60%;
+    font-style: italic;
+    color: white;
 }
-.topicos > a{
+footer > p > a{
+    color: #ffb84c;
     cursor: pointer;
-   line-height: 3rem;
+}
+
+/* media queries */
+
+/* Mobile devices – 320px — 480px.
+iPads, Tablets – 481px — 768px.
+Small screens, laptops – 769px — 1024px.
+Desktops, large screens – 1025px — 1200px.
+Extra large screens, TV – 1201px, and more */
+
+@media (max-width: 1225px) {
+    #p-cima-art{
+        font-size: 33px;
+        font-weight: bold;
+        line-height: 2.8rem;
+    }
+    aside > h2{
+        font-size: 40px;
+    }
+    #img-grande{
+        height: 70%;
+    }
+    aside > p{
+        font-size: 13px;
+    }
+} 
+@media(max-width: 1024px){
+    #p-sec{
+        font-size: 2.2rem;
+    }
+    header{
+        margin: 0px;
+        width: 100vw;
+    }
+    #img-grande{
+        height: 60%;
+        width: 80%;
+        margin-top: -220px;
+    }
+    #p-main-meio > span{
+        margin-top: 250px;
+    }
+    main{
+        margin-top: 300px;
+    }
+    nav{
+        justify-content: space-around;
+    }
+    .p-main-f > span{
+        font-size: 30px;
+    }
+    .p-main-f{
+        font-size: 15px;
+    }
+    #main-f-right > p{
+        font-size: 17px;
+    }
+    #img-arrow-container{
+        height: 80%;
+    }
+}
+@media(max-width: 880px){
+    #p-main-meio{
+        font-size: 30px;
+        margin-top: 190px;
+    }
+    article{
+        flex-direction: column;
+    }
+    #article-left{
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #p-cima-art{
+        display: flex;
+        justify-content: center;
+    }
+    #p-baixo-art{
+        width: 50%;
+        margin: auto;
+        padding: 10px;
+    }
+    #box-btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    #article-btn{
+        width: 40%;
+    }
+    #article-right{
+        margin-top: 50px;
+        width: 80vw;
+        justify-content: center;
+    }
+    aside{
+        height: 300px;
+    }
+}
+@media(max-width: 740px){
+    
+}
+@media(max-width: 400px){
+    #img-grande{
+        height: 30%;
+        width: 80%;
+        margin-top: -100px;
+    }
 }
